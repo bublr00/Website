@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bublr</title>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="starry-background"></canvas>
+
+    <div class="pixel-container">
+        <header class="site-header">
+            <img src="A.jpg" alt="Knight under a starry sky with comet" class="profile-image">
+            <h1 class="main-title">Bublr's website</h1>
+            <p class="tagline">Abu mohammad al julani fanatic...</p>
+        </header>
+
+        <main class="site-content">
+            <section id="about-me" class="content-section">
+                <h2 class="section-title">~About Me:</h2>
+                <p>
+                    Abu Hurayra reported that the Prophet, may Allah bless him and grant him peace, said, "A Muslim does not encounter fatigue, tiredness, concern, sorrow, injury or grief, or even a thorn which pricks him without Allah expiating his errors for him by that".
+                </p>
+            </section>
+
+            <section id="connect" class="content-section">
+                <h2 class="section-title">~Socials:</h2>
+                <ul>
+                    <li><a href="https://discord.gg/vJwSU2k5" target="_blank">[ Discord ]</a></li>
+                    <li><a href="https://www.instagram.com/forst.js?igsh=MWw5OGM1OHZibGZ2bA%3D%3D&utm_source=qr" target="_blank">[ Instagram ]</a></li>
+                    <li><a href="https://youtu.be/9k1U0aGQRNA?si=YtLck_kCx8-bq5l1" target="_blank">[ Gift ]</a></li>
+                   
+                </ul>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>© <span id="current-year"></span> bublr // aka forest.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple script to update the year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="stars.js"></script>
+</body>
+</html>

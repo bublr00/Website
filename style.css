@@ -1,0 +1,175 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #070a16;
+    color: #b0b0c8;
+    font-family: 'DotGothic16', monospace;
+    font-size: 14px;  */
+    line-height: 1.7;
+    padding: 15px;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+
+#starry-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+
+.pixel-container {
+    background-color: #181b2f;
+    border: 2px solid #303550;
+    padding: 20px 30px;
+    max-width: 600px;  screens */
+    width: 100%;         
+    box-shadow: 3px 3px 0px #00000070;
+    text-align: center;
+    position: relative;
+    z-index: 1;         
+}
+
+/* --- Header --- */
+.site-header {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #303550;
+}
+
+.profile-image {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border: 2px solid #cfa000;
+    margin-bottom: 12px;
+    display: inline-block;
+    background-color: #202025;
+}
+
+.main-title {
+    color: #dad<y_bin_540>;
+    font-size: 1.9em; /* Relative to body font-size */
+    margin: 8px 0 4px;
+}
+
+.tagline {
+    font-size: 1em; /* Relative to body font-size */
+    color: #8888a0;
+    margin-top: 0;
+}
+
+/* --- Content Sections --- */
+.content-section {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.content-section:last-of-type {
+    margin-bottom: 15px;
+}
+
+.section-title {
+    color: #cfa000;
+    font-size: 1.2em;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    display: inline-block;
+    border-bottom: 1px solid #303550;
+}
+
+p {
+    margin-bottom: 0.9em;
+}
+
+/* --- Arabic Text Styling --- */
+.arabic-text {
+    font-size: 1.25em; /* Relative to body font-size */
+    color: #cfa000;
+    line-height: 2;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* --- Connect / Social Links --- */
+#connect ul {
+    list-style: none;
+    padding: 0;
+}
+
+#connect li {
+    margin-bottom: 6px;
+}
+
+#connect a {
+    color: #6f9aff;
+    text-decoration: none;
+    transition: color 0.15s ease, letter-spacing 0.15s ease;
+}
+
+#connect a:hover,
+#connect a:focus {
+    color: #e0e0ff;
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+    outline: none;
+}
+
+/* --- Footer --- */
+.site-footer {
+    border-top: 1px dashed #303550;
+    padding-top: 12px;
+    margin-top: 20px;
+    font-size: 0.85em;
+    color: #606075;
+    text-align: center;
+}
+
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .pixel-container {
+        padding: 15px 20px;
+    }
+
+    .main-title {
+        font-size: 1.7em; 
+    }
+
+    .profile-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .section-title {
+        font-size: 1.1em;
+    }
+
+    .arabic-text {
+        font-size: 1.15em; 
+    }
+}
